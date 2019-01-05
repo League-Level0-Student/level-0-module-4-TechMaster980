@@ -61,7 +61,7 @@ rect(0, 0, 40, 40);
 //9. Now, change your code so the donkey is only shown when the mouse is inside the corner bounding box. Hint: use the dist() command:
 if(dist(0, 0, mouseX, mouseY) < 30){
   background(#040200);
-playSound=true;
+  playSound=true;
 }
 
 
@@ -73,7 +73,7 @@ if (playSound) {
 }
 if (playSound1) {
     woohooSound.trigger();
-     playSound1 = false;
+     playSound1= true;
 
 }
    
@@ -85,7 +85,7 @@ if (playSound1) {
 //11. When the tail has been pinned, write code to check if the tail was pinned inside the target bounding box. You can use dist() like you did earlier, or you can write your own code to check it another way. Show the donkey so the user knows where they pinned the tail.
 if(dist(200, 50, mouseX, mouseY) < 30){
   background(#040200);
-playSound1 = false;  
+  playSound1=false;  
 }
 //12. If the tail is in the right place, the player wins and you play a sound. To play a sound, drag and drop the .wav file onto your sketch, and add the following code to your program.
 
