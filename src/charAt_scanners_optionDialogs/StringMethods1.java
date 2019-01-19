@@ -1,4 +1,7 @@
 package charAt_scanners_optionDialogs;
+
+import javax.swing.JOptionPane;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
@@ -7,8 +10,9 @@ package charAt_scanners_optionDialogs;
 public class StringMethods1 {
 	public static void main(String[] args) {
 		
-		// 1. Create a String variable and initialize it to whatever you want
-
+		
+// 1. Create a String variable and initialize it to whatever you want
+String abc = JOptionPane.showMessageDialog(parentComponent, message, title, messageType, icon);
 		// 2. Print the 3rd char of your String to the console.
 		//    HINT: .charAt
 		
