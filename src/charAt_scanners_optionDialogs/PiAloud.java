@@ -21,18 +21,33 @@ String pi ="3.1415926535";
 
 
 	// 4. Print ALL the digits of of Pi (hint: use a loop)
+
 for(int i = 0; i < pi.length(); i++) {
 	System.out.println(pi.charAt(i));
 	speak(pi.charAt(i));
-}
+    char ch = getInputFromUser();
+    if(pi.charAt(i)==ch) {
+        System.out.println("correct");
+    }
+    else {
+    	   System.err.println("incorrect");
+    
+    }
+   }
 	// 5. Use the speak() method to speak all the digits of Pi.
 
 	// [ADVANCED]
 	// *6. Get a character from the user using the getInputFromUser() method
-   char ch="5";
+  // 
+ 
+     
+   
 	// *7. Compare the users' char to the next digit of Pi
     
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
+//if() {
+	
+//}
 }
 	static void speak(char characterToSpeak) {
 		try {
@@ -53,7 +68,7 @@ for(int i = 0; i < pi.length(); i++) {
 
 	static char getInputFromUser() {
 		Scanner scanner = new Scanner(System.in);
-		return scanner.next().toCharArray()[0];
+	    return scanner.next().toCharArray()[0];
 	}
 
 }
